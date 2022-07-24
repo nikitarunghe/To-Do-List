@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO_list</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Baloo+Tamma+2&family=Heebo:wght@100&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+      <h1>Orgainse Your Work!</h1>
+    </div>
+   <div class="container">
+    
+    <!-- creating form -->
+    <div class="container-1">
+      <h2>Add your to do work</h2>
+      <div id="tittle">
+        <label for="tec">Tittle: <input type="text" name="tittle" id="tec"> </label>
+        </div>
+      <div id="description">
+        <label for="dec">Description: <input type="text" name="description" id="dec"></label>
+      </div>
+     <button class="btn" id="add">Add iteam</button>
+     <button class="btn"  onclick="clearStorage()">Clear List</button>
+    </div>
+
+
+    <!-- creating table -->
+   <div class="container-2" >
+   <h2>TODO's_lists</h2>
+    <table id="table" >
+      <thead >
+        
+          <td>S.No</td>
+          <td>Tittle</td>
+          <td>Description</td>
+          
+          <td>Done</td>
+          <td>Action</td>
+         
+      </thead>
+      <tbody id="tablebody">
+          <tr>
+            <td>1</td>
+            <td>Drink coffee</td>
+            <td>Good for health</td>
+            
+            <td><input type="checkbox" name="checkbox" id="checkbox"></td>
+            <td><button class="btn">Delete</button></td>
+          </tr>
+      </tbody>
+     </table>
+   </div>
+  
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
